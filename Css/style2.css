@@ -1,0 +1,216 @@
+*{
+    font-family: "poppins", sans-serif;
+}
+
+
+body,html {
+    background-color: rgba(239, 221, 178, 0.804);
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#navMenu{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: rgb(247, 218, 149);
+    z-index: 100;
+}
+#logo{
+    display: inline-block;
+    overflow: hidden;
+    width:60px;
+    
+    border-radius: 50%;
+}
+#navMenu ul{
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+#navMenu ul li:first-child{
+    margin-right:auto;
+}
+#navMenu ul li a{
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:20px;
+    color: black;
+    margin-right: 40px;
+}
+
+#navMenu ul li:first-child{
+    justify-content: start;
+}
+#navMenu ul li a:hover{
+    background-color:rgb(243, 210, 134);
+
+}
+.centered-box{
+    display:flex;
+    justify-content: center;
+    padding: 20px 100px;
+    left:50%;
+}
+
+/* Swiper */
+
+.swiper{
+    width:100%;
+    height:100vh;
+}
+
+.swiper-wrapper img{
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+
+}
+
+.swiper-slide button{
+  position:absolute;
+    top:70vh;
+  left:70vw;
+  background: #fff2429c;
+  border: 1px solid #fff242;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.swiper-slide button:hover,
+.swiper-slide button:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #fff242;
+}
+.swiper-slide button:active{
+    opacity: 0.5;
+}
+
+/* text Grid  */
+
+.presentacio-container{
+    
+    display:grid;
+    grid-template-rows:auto auto;
+    grid-template-columns: 50vw 50vw;
+}
+
+
+.presentacio-grid{
+    text-align: justify;
+    justify-content: center;
+    padding:100px 40px;
+    
+}
+.text{
+    width: 30vw;
+    margin-left: auto;
+    margin-right:auto;
+    line-height: 2em;
+}
+
+.presentacio-grid img{
+    width:40vw;
+    height:auto;
+} 
+/* Pagina de contacte */
+.contacter{
+    min-height:100vh;   
+    width:100%;
+    display:flex;
+}
+
+.box{
+    background-color:rgb(248, 224, 168) ;
+    border-radius: 1em;
+    width:90%;
+    margin:auto;
+    max-width: 400px;
+    padding:1em 1.5em;
+    padding-bottom: 3.5em;
+    position:relative;
+    border: 2px solid rgb(179, 178, 178);
+}
+
+.box-container h2{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4;
+}
+.box-container{
+    width:100%;
+    display:grid;
+    grid-auto-columns: auto;
+}
+
+.box-container .box-h3-p{
+    border: 1px solid  rgb(179, 178, 178);
+    background-color: rgb(247, 218, 149);
+    border-radius: 50px;
+    text-align:center;
+    margin-bottom: 1.5em;
+    margin: 0.75em 50px; 
+}
+.box-h3-p h3{
+    font-weight:600;
+}
+ /* Missatge automatic encara no implementat */
+
+/* .input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: 1px solid rgb(222, 201, 152);
+    border-radius: .2em;
+}
+.boto-enviar{
+    font-family: inherit;
+    border:none;
+    outline:none;
+    font-size: 1rem;
+    padding: .8em 1em;
+
+}
+#Email-message{
+    resize:none;
+    text-align: start;
+    margin-bottom: .5em;
+    height: 100px;
+} */
+
+ /* Missatge automatic encara no implementat */
+
+
+@media screen and (max-height: 740px) {
+    .box{
+    margin-top: 150px;
+    }
+
+
+
+}
