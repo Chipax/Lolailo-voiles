@@ -10,7 +10,10 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
       clickable:'true',
     },
-  
+    autoplay: {
+      delay: 5000,
+      transition:0.5,
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
