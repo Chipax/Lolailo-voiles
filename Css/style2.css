@@ -143,10 +143,26 @@ body,html {
         display:grid;
         grid-template-rows:auto;
         grid-template-columns: 80vw;
-              
+        grid-template-areas:
+        "text1"
+        "img1"
+        "text2"
+        "img2";
+    }
+    .presentacio-container > .text1{
+        grid-area: text1;
+    }
+    .presentacio-container > .text2{
+        grid-area: text2;
+    }
+    .presentacio-container > .img1{
+        grid-area: img1;
+    }
+    .presentacio-container > .img2{
+        grid-area: img2;
     }
     .presentacio-grid img{
-        max-height:40vh;
+        max-height:60vh;
         width:80vw;
     }
 } 
