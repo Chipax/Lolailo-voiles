@@ -121,12 +121,12 @@ body,html {
 
 .presentacio-grid{
     text-align: justify;
-    justify-content: center;
-    padding:100px 40px;
+    margin:auto;
+    padding:100px 40px
     
 }
 .text{
-    width: 30vw;
+    /* width: 30vw; */
     margin-left: auto;
     margin-right:auto;
     line-height: 2em;
@@ -135,9 +135,23 @@ body,html {
 .presentacio-grid img{
     width:40vw;
     max-height:70vh ;
-    max-width: 50vw;
-    object-fit: cover   ;
+    object-fit:cover;
 } 
+
+@media screen and (max-width:900px) {
+    .presentacio-container{
+        display:grid;
+        grid-template-rows:auto;
+        grid-template-columns: 80vw;
+              
+    }
+    .presentacio-grid img{
+        max-height:40vh;
+        width:80vw;
+    }
+} 
+    
+
 /* Pagina de contacte */
 .contacter{
     min-height:100vh;   
